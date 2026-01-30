@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Nurfatimah! 🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Confetti Background -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <!-- Welcome Modal for Music Autoplay -->
+    <div class="welcome-modal" id="welcomeModal">
+        <div class="modal-content">
+            <div class="modal-icon">🎂✨</div>
+            <h2 class="modal-title">Happy Birthday!</h2>
+            <p class="modal-text">Let's celebrate this special day! 🎵💛</p>
+            <button class="modal-button" id="startButton">
+                <span class="button-icon">🎉</span>
+                <span class="button-text">Start the Celebration</span>
+            </button>
+            <p class="modal-note">(Klik untuk memulai)</p>
+        </div>
+    </div>
+
+    <!-- Background Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <button class="music-toggle" id="musicToggle">
+            <span class="music-icon playing">🎵</span>
+            <span class="music-icon paused">🔇</span>
+        </button>
+        <span class="music-label">Music</span>
+        <audio id="bgMusic" loop>
+            <source src="music/background.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Navigation Dots -->
+    <nav class="nav-dots">
+        <div class="dot active" data-section="0"></div>
+        <div class="dot" data-section="1"></div>
+        <div class="dot" data-section="2"></div>
+        <div class="dot" data-section="3"></div>
+        <div class="dot" data-section="4"></div>
+    </nav>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <p>Scroll untuk memulai perjalanan ✨</p>
+    </div>
+
+    <!-- SECTION 1: OPENING -->
+    <section class="section opening" id="section-0">
+        <div class="decorative-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="content-wrapper fade-in">
+            <div class="birthday-badge">
+                <span class="badge-text">🎉 Special Day 🎉</span>
+            </div>
+            
+            <h1 class="main-title">
+                <span class="title-line">Happy Birthday</span>
+                <span class="title-name">Nurfatimah!</span>
+            </h1>
+            
+            <div class="subtitle-box">
+                <p class="subtitle">Dear my bestfriend, my partner in crime, my favorite human...</p>
+                <p class="subtitle-small">Selamat datang di perjalanan kenangan kita 💛</p>
+            </div>
+
+            <div class="opening-message">
+                <p>Hari ini bukan hari biasa. Hari ini adalah hari di mana dunia mendapatkan hadiah terindahnya, yaitu kamu! 🎂</p>
+                <p>Aku bikin website ini khusus buat kamu, buat ngerayain semua momen dan juga kenangan yang kita bagi bareng.</p>
+            </div>
+
+            <div class="fun-facts">
+                <div class="fact-card">
+                    <span class="fact-number">10</span>
+                    <span class="fact-label">Tahun Persahabatan</span>
+                </div>
+                <div class="fact-card">
+                    <span class="fact-number">∞</span>
+                    <span class="fact-label">Kenangan Berharga</span>
+                </div>
+                <div class="fact-card">
+                    <span class="fact-number">100%</span>
+                    <span class="fact-label">Best Friend Material</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: SCROLL OUR MEMORIES -->
+    <section class="section memories" id="section-1">
+        <div class="section-header">
+            <span class="chapter-number">Chapter 01</span>
+            <h2 class="section-title">Scroll Our Memories</h2>
+            <p class="section-subtitle">Cerita-cerita yang nggak akan pernah aku lupain 📖</p>
+        </div>
+
+        <div class="memories-container">
+            <!-- Memory Story 1 -->
+            <div class="memory-story">
+                <div class="memory-icon">🌟</div>
+                <div class="memory-content">
+                    <h3 class="memory-title">Pertama Kali Ketemu</h3>
+                    <p class="memory-text">
+                        Sejujurnya kaya biasa, kita sama-sama nggak kenal. Dari sekolah SD yang beda. Tapi beberapa waktu pas kita sekelas, akhirnya kita kenalan. Nggak tau siapa yang mulai, tapi aku rasa pastinya kamu duluan yang nyoba kenalan sama aku. Karena pas waktu itu, aku orangnya pendiam banget dan takut buat kenalan duluan.
+                    </p>
+                    <span class="memory-date">📅 2016</span>
+                </div>
+            </div>
+
+            <!-- Memory Story 2 -->
+            <div class="memory-story">
+                <div class="memory-icon">😂</div>
+                <div class="memory-content">
+                    <h3 class="memory-title">Momen Paling Kocak</h3>
+                    <p class="memory-text">
+                        Inget nggak dulu kita pernah sama-sama salting padahal cuma saling tatap-tatapan doang? Aku sampai detik ini juga nggak tau kenapa kita bisa ketawa trus tiba-tiba salting. Itu masih jadi misteri sih dan menurutku juga jadi momen kocak kalo diinget.
+                    </p>
+                    <span class="memory-date">📅 2016</span>
+                </div>
+            </div>
+
+            <!-- Memory Story 3 -->
+            <div class="memory-story">
+                <div class="memory-icon">💪</div>
+                <div class="memory-content">
+                    <h3 class="memory-title">Saat Kamu Ada Buatku</h3>
+                    <p class="memory-text">
+                        Dulu, awal kita kenal, aku masih banyak menutup diri dari kamu. Nggak banyak hal yang aku ceritain ke kamu soal aku. Tapi, berjalannya waktu bikin aku jadi ngerasa kalau pelan-pelan berusaha terbuka ke kamu itu nggak papa. Walaupun masih banyak salah paham waktu itu, tapi aku seneng karena kamu juga selalu nyoba buat ngertiin aku.
+                    </p>
+                    <span class="memory-date">📅 2017-2018</span>
+                </div>
+            </div>
+
+            <!-- Memory Story 4 -->
+            <div class="memory-story">
+                <div class="memory-icon">🎭</div>
+                <div class="memory-content">
+                    <h3 class="memory-title">Petualangan Random Kita</h3>
+                    <p class="memory-text">
+                        Banyak hal yang udah kita laluin. Suka dan dukanya juga selalu ada. Kita kemana-mana bareng, main bareng, beli jajan bareng, cerita-cerita soal kehidupan kita, cerita soal banyak hal. Dan dari kedekatan itu yang buat kita saling mengenal satu sama lain. Dan dari situ juga, kita banyak banget bikin momen-momen persahabatan yang luar biasa.
+                    </p>
+                    <span class="memory-date">📅 2017-2019</span>
+                </div>
+            </div>
+
+            <!-- Memory Story 5 -->
+            <div class="memory-story">
+                <div class="memory-icon">🌈</div>
+                <div class="memory-content">
+                    <h3 class="memory-title">Kenangan Terfavorit</h3>
+                    <p class="memory-text">
+                        Buat aku, setiap momen sama kamu itu adalah momen berharga dan paling menyenangkan. Mungkin jujur aja, aku nggak akan bisa nginget banyak momen kita secara detail, tapi perasaan senengnya itu nggak akan pernah bisa dilupain. Dan momen ter-favorite aku sama kamu itu adalah momen dimana kita bisa ngabisin waktu bareng.
+                    </p>
+                    <span class="memory-date">📅 2016-Sekarang</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: LETTERS I NEVER SENT -->
+    <section class="section letters" id="section-2">
+        <div class="section-header">
+            <span class="chapter-number">Chapter 02</span>
+            <h2 class="section-title">Letters I Never Sent</h2>
+            <p class="section-subtitle">Kata-kata yang selalu ada di hati, tapi nggak pernah terucap 💌</p>
+        </div>
+
+        <div class="letters-container">
+            <!-- Letter 1 -->
+            <div class="letter-envelope">
+                <div class="envelope-flap"></div>
+                <div class="letter-paper">
+                    <div class="letter-header">
+                        <span class="letter-to">To: My Dearest Friend</span>
+                        <span class="letter-date">31-01-2026</span>
+                    </div>
+                    <div class="letter-body">
+                        <p class="letter-salutation">Dear Nurfatimah,</p>
+                        <p>Terimakasih udah jadi tempat paling nyaman buat aku. Terimakasih juga buat sabarnya kamu ngadepin aku yang dulu masih suka egois. Terimakasih karena udah bersabar buat pertahanin persahabatan kita.</p>
+                        <p>Kamu pernah bilang, kamu ragu kalau aku itu masih nganggep kamu temen atau nggak karena sikapku yang cuek. Aku masih dan akan selalu nganggep kamu sahabat paling penting dan berharga dalam hidupku.</p> 
+                        <p>Mungkin kamu juga bertanya-tanya, kenapa aku nggak pernah atau jarang banget cerita soal apapun ke kamu, apa aku nggak punya masalah? Aku punya, aku punya beberapa masalah yang aku alamin. Bukan karena aku nggak mau cerita ke kamu atau nggak percaya kamu. Tapi, aku selalu ngerasa entah itu momen pas kita ketemu atau chat, aku ngerasa tenang, aku ngerasa aku nggak punya masalah, aku ngerasa kaya terkadang aku nggak butuh cerita atau didengar buat aku supaya ngerasa lega. Bener-bener liat kamu ada aja itu udah cukup bikin aku lega.</p>   
+                        
+                        <p class="letter-closing">With all my love,<br>Your Bestie 💛</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Letter 2 -->
+            <div class="letter-envelope">
+                <div class="envelope-flap"></div>
+                <div class="letter-paper">
+                    <div class="letter-header">
+                        <span class="letter-to">To: The One Who Gets Me</span>
+                        <span class="letter-date">31-01-2026</span>
+                    </div>
+                    <div class="letter-body">
+                        <p class="letter-salutation">Hey Imm,</p>
+                        <p>Kadang aku takut kalau mikir masa depan. Takut kalau suatu hari nanti kita cuma jadi "pernah dekat". Takut momen-momen kecil persahabatan kita nggak bisa kita ulang lagi. Kita punya jalan dan tujuan yang beda, apalagi nanti kalau datang waktunya kamu ataupun aku udah nikah. Momen dimana akhirnya hidup minta kita buat milih arah yang bener-bener berbeda. Tapi, sejauh apapun hidup membawa kita, aku selalu berharap kamu bahagia, dengan adanya ataupun nggak adanya aku. Kalau nanti kita ada di momen dimana kita bener-bener berjalan menjauh, tolong buat inget satu hal kalau kamu itu pernah jadi rumah di salah satu bab hidupku. And i'll always be grateful for that. </p>
+
+                        <p class="letter-closing">Forever your person,<br>Vadilah ✨</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Letter 3 -->
+            <div class="letter-envelope">
+                <div class="envelope-flap"></div>
+                <div class="letter-paper">
+                    <div class="letter-header">
+                        <span class="letter-to">To: My Partner in Everything</span>
+                        <span class="letter-date">31-01-2026</span>
+                    </div>
+                    <div class="letter-body">
+                        <p class="letter-salutation">Sahabatku,</p>
+                        <p>Happy birthday! Semoga tahun ini kamu dapetin semua yang kamu impiin. Semoga kamu selalu dikelilingi orang-orang yang appreciate kamu, dan semoga kamu nggak pernah lupa betapa berharganya kamu di hidup aku.</p>
+                        <p>Terimakasih karena udah lahir dan bertahan sejauh ini, dengan semua versi dirimu yang aku kenal. Aku harap hidup bisa memperlakukan kamu dengan lebih lembut.</p>
+                        <p>Kalau kamu capek, aku harap kamu juga bakal ingat kalau kamu nggak sendirian, kamu masih punya aku. Aku yang bakal selalu mendoakan kamu, bahkan dari jarak yang mungkin nggak terlihat.</p>
+                        <p>Teruslah tumbuh, dengan caramu sendiri. Aku bangga sama kamu, hari ini, dan hari-hari yang akan datang.</p>
+                        
+                        <p class="letter-closing">Always rooting for you,<br>Your Biggest Fan 🎉</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: THE MUSEUM OF US (FIXED LAYOUT) -->
+    <section class="section museum" id="section-3">
+        <div class="museum-wrapper">
+            <!-- Left Side: Header & Note -->
+            <div class="museum-sidebar">
+                <div class="section-header">
+                    <span class="chapter-number">Chapter 03</span>
+                    <h2 class="section-title">The Museum of Us</h2>
+                    <p class="section-subtitle">Gallery kenangan yang terabadikan 📸</p>
+                </div>
+
+                <div class="museum-note">
+                    <p>📌 Setiap foto ini punya ceritanya sendiri. Every smile, every silly face, every moment captured here is a treasure. Thanks for being in my story. 💛</p>
+                </div>
+            </div>
+
+            <!-- Right Side: Photo Gallery -->
+            <div class="museum-gallery">
+                <!-- Photo 1-30 -->
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/1.jpg" alt="Memory 1" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Waktu kita jadi domas dinikahannya Mbakmu. Nggak expect sih!</p>
+                            <span class="caption-date">2019</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/2.jpg" alt="Memory 2" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Nggak tau deh kenapa kita gabut banget mampir ke sekolahan pas sekolah sepi</p>
+                            <span class="caption-date">2019</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/3.jpg" alt="Memory 3" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Kita di Banyuwangi~~</p>
+                            <span class="caption-date">2019</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/4.jpg" alt="Memory 4" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Baju kita sewarna~</p>
+                            <span class="caption-date">2019</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/5.jpg" alt="Memory 5" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Kita udah mau berangkat pulang, kangen deh rasanya.</p>
+                            <span class="caption-date">2019</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/6.jpg" alt="Memory 6" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Lucuuuu</p>
+                            <span class="caption-date">2019</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/7.jpg" alt="Memory 7" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Kita main ke hutan pinus</p>
+                            <span class="caption-date">2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/8.jpg" alt="Memory 8" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Kita di Nganjuk dan kita jalan-jalan sama Mbak Rini, suaminya, dan Brian</p>
+                            <span class="caption-date">2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/9.jpg" alt="Memory 9" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Tempat kita makan karena selalu bingung mau kemana. Sayangnya udah gk jualan lagi</p>
+                            <span class="caption-date">2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/10.jpg" alt="Memory 10" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Terakhir ketemu sebelum aku masuk kuliah</p>
+                            <span class="caption-date">2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/11.jpg" alt="Memory 11" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Kita main bareng keliling Madiun dan kamu nginep di kosku~</p>
+                            <span class="caption-date">2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/12.jpg" alt="Memory 12" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Ini pas nganterin kamu ke terminal</p>
+                            <span class="caption-date">2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/13.jpg" alt="Memory 13" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Makan bakso ojo lali favorite kita wkwk</p>
+                            <span class="caption-date">2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/14.webp" alt="Memory 14" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Beliin kado buat Brian ini mah</p>
+                            <span class="caption-date">2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/15.webp" alt="Memory 15" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Main ke hutan pinus lagi di hari lebaran~</p>
+                            <span class="caption-date">2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/16.webp" alt="Memory 16" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Bakso bakso!</p>
+                            <span class="caption-date">2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/17.webp" alt="Memory 17" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Lebaran ke tempat Reka nih!</p>
+                            <span class="caption-date">2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/18.webp" alt="Memory 18" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Ketemu lagi di Madiun, kita nonton bioskop bareng</p>
+                            <span class="caption-date">2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/19.webp" alt="Memory 19" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Ke Jogja, ikut study tour anaknya Mbak Ria wkwk</p>
+                            <span class="caption-date">2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/20.webp" alt="Memory 20" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Main di pantai. Jadi pengen ke pantai bareng kamu</p>
+                            <span class="caption-date">2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/21.webp" alt="Memory 21" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Museum Dirgantara~</p>
+                            <span class="caption-date">2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/22.webp" alt="Memory 22" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Kita ke Kediri buat nonton</p>
+                            <span class="caption-date">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/23.webp" alt="Memory 23" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Ke pondok pesantren beli mukena hehe</p>
+                            <span class="caption-date">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/24.webp" alt="Memory 24" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Bebeknya enak, pengen beli lagi</p>
+                            <span class="caption-date">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/25.webp" alt="Memory 25" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Di Caruban~</p>
+                            <span class="caption-date">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/26.jpg" alt="Memory 26" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Lucu dan empuk-empuk boneka yang ada di Mr.DIY</p>
+                            <span class="caption-date">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/27.jpg" alt="Memory 27" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Jauh-jauh ke Maospati cuma beli Mixue</p>
+                            <span class="caption-date">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/28.webp" alt="Memory 28" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Nyeblak, tapi seblaknya rasanya kurang mantep sih</p>
+                            <span class="caption-date">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/29.jpg" alt="Memory 29" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Foto-foto dulu lah ya</p>
+                            <span class="caption-date">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-frame">
+                    <div class="frame-border">
+                        <img src="images/30.webp" alt="Memory 30" class="museum-photo" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="caption-text">Ini ulang tahun kamu yang kemarin xixixi</p>
+                            <span class="caption-date">2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CLOSING -->
+    <section class="section closing" id="section-4">
+        <div class="decorative-shapes">
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="closing-message">
+                <h2 class="closing-title">
+                    <span class="sparkle">✨</span>
+                    One Last Thing...
+                    <span class="sparkle">✨</span>
+                </h2>
+                
+                <div class="final-words">
+                    <p>Kamu adalah salah satu hadiah terbaik yang pernah aku dapetin di hidup ini.</p>
+                    <p>Terimakasih udah jadi yang terbaik, terimakasih karena udah ada, dan terimakasih udah jadi diri kamu sendiri, karena itulah yang bikin kamu spesial.</p>
+                    <p class="highlight-text">Happy birthday, my dearest friend! 🎂</p>
+                    <p>Semoga tahun ini penuh dengan kebahagiaan, kesuksesan, dan semua hal indah yang kamu deserve. Semoga kita bisa bikin kenangan baru bareng, terus ketawa bareng, dan terus jadi partner in crime selamanya!</p>
+                </div>
+
+                <div class="birthday-wish-card">
+                    <div class="wish-header">🎁 My Birthday Wish for You 🎁</div>
+                    <div class="wish-content">
+                        <p>Semoga kamu selalu sehat, selalu bahagia, dan selalu dikelilingi cinta. Semoga mimpi-mimpi kamu jadi kenyataan, dan semoga kita bisa terus ngejalanin hidup bareng, share every high and low. You deserve the world, and I hope you get it all! 🌟</p>
+                    </div>
+                </div>
+
+                <div class="signature-section">
+                    <p class="signature-text">With all my love and confetti,</p>
+                    <p class="signature-name">Vadilah</p>
+                    <p class="signature-date">31-01-2026</p>
+                </div>
+
+                <div class="final-decoration">
+                    <span class="deco-heart">💛</span>
+                    <span class="deco-star">⭐</span>
+                    <span class="deco-balloon">🎈</span>
+                    <span class="deco-cake">🎂</span>
+                    <span class="deco-gift">🎁</span>
+                </div>
+            </div>
+
+            <div class="end-note">
+                <p>🎉 Selamat ulang tahun, Nurfatimah! Here's to another year of amazing adventures together! 🎉</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
